@@ -14,7 +14,7 @@ def recorridoRecursivo (mypath):
             print(os.path.abspath(dato2))
 
     for fichero in ficheros:
-        print('Fichero: ', fichero, '- Tamaño', os.path.getsize(os.path.join(mypath, fichero)), 'bytes')
+        print('- Fichero: ', fichero, '- Tamaño', os.path.getsize(os.path.join(mypath, fichero)), 'bytes')
 
     for directorio in directorios:
         print(directorio)
@@ -33,7 +33,7 @@ datos = os.listdir('/Users/estefaniaroblesserrano/Downloads')
 
 for dato in datos:
     if os.path.isfile(os.path.join('/Users/estefaniaroblesserrano/Downloads', dato)):
-        print(dato, '- Tamaño', os.path.getsize(os.path.join('/Users/estefaniaroblesserrano/Downloads', dato)), 'bytes')
+        print('- Fichero: ', dato, '- Tamaño', os.path.getsize(os.path.join('/Users/estefaniaroblesserrano/Downloads', dato)), 'bytes')
 
 
 #Recorre de manera recursiva todos los directorios desde tu carpeta personal y muestra los ficheros de
