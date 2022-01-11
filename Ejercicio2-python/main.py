@@ -24,7 +24,7 @@ def addContact ():
     name = input()
     print('- Número de teléfono: ')
     phone = input()
-    if phone.isnumeric() & (len(phone) == 3):
+    if phone.isnumeric() & (len(phone) == 9):
         global contacts
         contacts.update({name : phone})
         optionsMenu()
