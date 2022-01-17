@@ -1,6 +1,5 @@
 import os
 
-
 def recorridoRecursivo (mypath):
     datos2 = os.scandir(mypath)
     ficheros = []
